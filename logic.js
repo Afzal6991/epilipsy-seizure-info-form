@@ -1,11 +1,11 @@
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyAxt3raH4O1ulgq0AseCD5Bg2dlV4HAIEE",
-    authDomain: "epilipsy-9bd72.firebaseapp.com",
-    databaseURL: "https://epilipsy-9bd72.firebaseio.com",
-    projectId: "epilipsy-9bd72",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
     storageBucket: "",
-    messagingSenderId: "984783458526"
+    messagingSenderId: ""
   };
 firebase.initializeApp(config);
 
