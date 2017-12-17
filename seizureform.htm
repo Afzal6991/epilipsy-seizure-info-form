@@ -30,8 +30,12 @@
             <input type="text" name="name" id="name" required>
           </p>
           <p>
-            <label>gender</label>
-            <input type="text" name="gender" id="gender">
+            <label>Gender</label>
+            <select name="Gender" id="gender"> 
+                  <option value=" "> EMPTY </option> 
+                  <option value="Male">Male</option> 
+                  <option value="Female">Female</option> 
+              </select> 
           </p>
           <p>
             <label>Email Address</label>
@@ -42,42 +46,57 @@
             <input type="text" name="age" id="age">
           </p>
           <p>
-            <label>How many times sizure occured in last month</label>
-            <select id="freq">
+            <label>Select Month of seizure</label>
+            <select name="month" id="month">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+                </select>
+          </p>
+          <p>
+            <label>How many times seizure occured in month</label>
+            <select id="freq" onchange="run()">
+              <option value="0">Selected</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
-              <option value="4">4</option>
             </select>
           </p>
-          <p>
-            <label>where seizure occured</label>
-            <input type="text" name="where seizure occured" id="seizure_ocurence">
-          </p>
-          <p>
-            <label>Ocurrence Date/Time</label>
-            <input type="datetime-local" name="Ocurrence_time" id="Ocurrence_time" >
-            
-          </p>
+          <div id='parent' class="centered"></div>
+          <br>
+          <div id='parent1' class="centered"></div>
+          <div id='parent2' class="centered"></div>
+          <div id='parent3' class="centered"></div>
+          <div id='parent4' class="centered"></div>
+          <div id='parent5' class="centered"></div>
+          <br>
+          <div id='parent6' class="centered"></div>
+          <br>
+          <div id='parent7' class="centered"></div>
+          <div id='parent8' class="centered"></div>
+          <div id='parent9' class="centered"></div>
+          <div id='parent10' class="centered"></div>
+          <div id='parent11' class="centered"></div>
+          <br>
+          <div id='parent12' class="centered"></div>
+          <br>
+          <div id='parent13' class="centered"></div>
+          <div id='parent14' class="centered"></div>
+          <div id='parent15' class="centered"></div>
+          <div id='parent16' class="centered"></div>
+          <div id='parent17' class="centered"></div>
+          
 
-          <p>
-          <p class="full">
-            <label>Side notes</label>
-            <textarea name="Side notes" rows="4" id="Sidenotes"></textarea>
-          </p>
-          <p class="full">
-
-          <p>
-          <p class="full">
-            <label>Resulting Injuries</label>
-            <textarea name="Resulting Injuries" rows="4" id="ResultingInjuries"></textarea>
-          </p>
-          <p class="full">
-          <p>
-          <p class="full">
-            <label>Physical Side effects</label>
-            <textarea name="Side effects" rows="4" id="Sideeffects"></textarea>
-          </p>
+          
           <p class="full">
             <button type="submit">Submit</button>
           </p>
@@ -86,7 +105,7 @@
     </div>
   </div>
 
-  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
   <script src="logic.js"></script>
 </body>
 </html>
